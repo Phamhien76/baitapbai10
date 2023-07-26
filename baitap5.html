@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai5</title>
+</head>
+<body>
+    <script>
+        let diemHtml= +prompt("Hãy nhập điểm Html: ");
+        let diemCss= +prompt("Hãy nhập điểm Css: ");
+        let diemJavascript= +prompt("Hãy nhập điểm Javascript: ");
+
+        diemTb=(diemHtml+diemCss+diemJavascript)/3;
+        if(diemTb<5){
+            alert("Xếp loại Yếu với điểm TB: "+diemTb);
+        }
+        else if(diemTb<6){
+            alert("Xếp loại Kém với điểm TB: "+diemTb);
+        }
+        else if(diemTb<7){
+            alert("Xếp loại Trung Bình với điểm TB:"+diemTb);
+        }
+        else if(diemTb<8){
+            alert("Xếp loại Khá với điểm TB:"+diemTb);
+        }
+        else if(diemTb<9){
+            alert("Xếp loại Giỏi với điểm TB:"+diemTb);
+        }
+        else{
+            alert("Xếp loại Xuất Sắc với điểm TB:"+diemTb);
+        }
+
+
+
+    </script>
+</body>
+</html>

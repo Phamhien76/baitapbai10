@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi so can nang</title>
+</head>
+<body>
+    <script>
+        // tính chỉ số BMI
+        // nhập cân nặng, chiều cao
+        let cannang=+prompt("Hãy nhạp cân nặng: ");
+        let chieucao= +prompt("Hãy nhập chiều cao:");
+        // Tính chỉ sosos MBI
+        mbi=cannang/(chieucao*chieucao);
+        // hiển thị két quả
+        if(mbi<18.5){
+            alert("Bạn đang bị gầy "+mbi) ;
+        }
+        else if(mbi < 24.9){
+            alert("Cơ thể của bạn bình thường " +mbi);
+        }
+        else if(mbi <=25){
+            alert("Cơ thể của bạn Thừa cân " +mbi);
+        }
+        else if(mbi < 29.9){
+            alert("Cơ thể của bạn đang tiền béo phì " +mbi);
+        }
+        else if(30 < mbi > 34.9){
+            alert("Cơ thể của bạn đang béo phì độ 1" +mbi);
+        }
+        else if(35 < mbi > 35.9){
+            alert("Cơ thể của bạn đang béo phì độ 2" +mbi);
+        }
+        else {
+            alert("Cơ thể của bạn đang béo phì độ 3" +mbi);
+        }
+
+    </script>
+</body>
+</html>

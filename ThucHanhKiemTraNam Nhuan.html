@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiemTra nam Nhuận</title>
+</head>
+<body>
+    <script>
+        // kiểm tra năm nhuận
+        // nhập năm
+        let year=+ prompt("Nhập năm: ");
+        // Kiẻm tra năm
+        namnhuan= year % 4 ==0 && year %100 !=0|| year% 400 == 0
+        
+        // kết quả
+        if(year){
+            alert("Đây là năm Nhuận "+year)
+        }else{
+            alert("Đây không phải là năm Nhuận " +year)
+        }
+            </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai4</title>
+</head>
+<body>
+    <script>
+        // nhập số
+      let number1= +prompt("Hãy nhập vào số nguyên: "); 
+      let number2= +prompt("Hãy nhập vào số nguyên: ");
+      let pheptinh= prompt ("Hãy nhập phép tính:" );
+
+       cong=number1+number2,
+       tru=number1-number2,
+       nhan=number1*number2, 
+       chia=number1/number2;
+
+        if(pheptinh=='+'){
+        alert("Tổng của hai số là: " +cong);
+      }
+      else if(pheptinh=="-"){
+        alert('Hiệu của hai số là:'+tru);
+      }
+      else if(pheptinh=="*"){
+        alert("Tích của hai số là: "+nhan);
+      }
+      else{
+        alert("Thương của hai số là: "+chia)
+      }
+
+
+    </script>
+</body>
+</html>

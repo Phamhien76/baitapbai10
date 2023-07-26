@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai7</title>
+</head>
+<body>
+    <script>
+        // nhập tháng , năm và in ra số ngày của tháng đó
+        // nhạp tháng năm
+        let month= +prompt("Hãy nhập tháng: ");
+        let year= +prompt("Hãy nhập năm: ");
+        // in ra số ngày của tháng đó
+        // xác định năm nhuận và không
+        namnhuan = (year % 4 ==0 && year % 100 !=0|| year % 400 ==0)
+
+
+        // xác định ngày trong các tháng
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert("Là tháng có 31 ngày");         
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert("là tháng có 30 ngày");
+            case 2:
+                if(namnhuan){
+                    alert("Là tháng có 29 ngày");   
+                }
+                else {
+                    alert("Là tháng có 28 ngày");
+                }
+                break;        
+            default:
+                alert("Số tháng không hợp lệ");
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
